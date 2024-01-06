@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+		integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="pure-g">
+		<div class="pure-u-1 pure-u-md-3-4">
+			<img id="camera-img" src="nosignal.png">
+		</div>
+
+		<div class="arrows pure-u-1 pure-u-md-1-4">
+			<button class="arrow button-xlarge pure-button up-button" type="button" onmousedown="front()" onmouseup="stop()" ontouchstart="front()" ontouchend="stop()">
+				<i class=" fa fa-arrow-up"></i>
+			</button>
+			<br>
+			<button class="arrow button-xlarge pure-button" type="button" onmousedown="left()" onmouseup="stop()" ontouchstart="left()" ontouchend="stop()">
+				<i class="fa fa-arrow-left"></i>
+			</button>
+			<button class="arrow button-xlarge pure-button stop-button" type="button" onmousedown="stop()" onmouseup="stop()" ontouchstart="stop()" ontouchend="stop()">
+				<i class="stop"></i></button>
+			<button class="arrow button-xlarge pure-button" type="button" onmousedown="right()" onmouseup="stop()" ontouchstart="right()" ontouchend="stop()">
+				<i class="fa fa-arrow-right"></i>
+			</button>
+			<br>
+			<button class="arrow button-xlarge pure-button" type="button" onmousedown="back()" onmouseup="stop()" ontouchstart="back()" ontouchend="stop()">
+				<i class="fa fa-arrow-down"></i>
+			</button>
+			<br>
+			<button class="ctrl-btn button-xlarge pure-button" id="mic-start" type="button" onclick="startMicStreaming()">
+				Record <i class="fa fa-microphone"></i>
+			</button>
+			<button class="ctrl-btn btn-beat button-xlarge pure-button" id="mic-stop" type="button" style="display: none" onclick="stopMicStreaming()">
+				Stop <i class="fa fa-microphone-slash"></i>
+			</button>
+			<button class="ctrl-btn button-xlarge pure-button" id="video-start" type="button" onclick="startVideoStreaming()">
+				Start <i class="fa fa-video-camera"></i>
+			</button>
+			<button class="ctrl-btn button-xlarge pure-button" id="video-stop" type="button" style="display: none" onclick="stopVideoStreaming()">
+				Stop <i class="fa fa-stop-circle"></i>
+			</button>
+		</div>
+	</div>
+	<script src="script.js "></script>
+</body>
+</html>

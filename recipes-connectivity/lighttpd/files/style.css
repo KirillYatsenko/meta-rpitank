@@ -1,0 +1,69 @@
+body {
+    background-color: azure;
+}
+
+.main-body {
+    margin: auto;
+    text-align: center;
+}
+
+.button-xlarge {
+    font-size: 150% !important;
+}
+
+.arrow {
+    height: 3em;
+    width: 3em;
+}
+
+.arrows {
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.stop {
+    display: inline-block;
+}
+
+.stop-button {
+    margin: 5px;
+}
+
+.ctrl-btn {
+    margin-top: 20px;
+	margin-left: 20px;
+}
+
+#camera-img {
+    height: 50vh;
+    width: 100%;
+}
+
+@keyframes heartbeat
+{
+  0%   { transform: scale( 1.05 ); }
+  10%  { transform: scale( 1.10 ); }
+  20%  { transform: scale( 1.15 ); }
+  30%  { transform: scale( 1.20 ); }
+  40%  { transform: scale( 1.25 ); }
+  50%  { transform: scale( 1.25 ); }
+  60%  { transform: scale( 1.20 ); }
+  70%  { transform: scale( 1.15 ); }
+  80%  { transform: scale( 1.10 ); }
+  90%  { transform: scale( 1.05 ); }
+  100% { transform: scale( 1.00 ); }
+}
+
+.btn-beat {
+    animation: heartbeat 1s infinite;
+}
+
+@media all and (min-width:768px) {
+    #camera-img {
+        height: 100vh;
+        width: 100%;
+    }
+    .arrows {
+        margin-top: 40vh;
+    }
+}
