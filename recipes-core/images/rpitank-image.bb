@@ -32,10 +32,6 @@ COMPATIBLE_MACHINE = "^rpi$"
 
 LICENSE = "CLOSED"
 
-# Username: root, password: root
-INHERIT += "extrausers"
-EXTRA_USERS_PARAMS = "usermod -p '\$6\$11223344\$osLpSEFZUThpEY0LTgeIRs6W.RrMbBdd4TtQRi4ZDTr147/6Om3Gjvcqwvdy55BVWDiKytLN7sobTyQlpQkin1' root;"
-
 INIT_MANAGER = "sysvinit"
 
 inherit core-image
